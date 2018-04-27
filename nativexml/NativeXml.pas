@@ -184,7 +184,7 @@ interface
 {$endif}
 
 // define if you want to include the Graphics unit, and graphics-related properties.
-{$define USEGRAPHICS}
+{.$define USEGRAPHICS}
 
 // define if you want to include zlib (=deflate) compression in binary xml.
 {.$define USEZLIB}
@@ -200,8 +200,6 @@ interface
 
 // define if you want an additional int64 field FSourcePos in each TXmlNode
 {.$define SOURCEPOS}
-
-{$IFDEF USER_DEFINES_INC}{$I user_defines.inc}{$ENDIF}
 
 uses
 {$ifdef USEGRAPHICS}
@@ -235,7 +233,7 @@ uses
 const
 
   // Current version of the NativeXml unit
-  cNativeXmlVersion = 'v4.09';
+  cNativeXmlVersion = 'v4.10';
 
   // symbol styles (cardinal)
   // Default symbol style is ssUnknown, but highlevel code can
